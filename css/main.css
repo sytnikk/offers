@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Trebuchet_MS';
+    src: url('../fonts/Trebuchet_MS.woff') format('woff'),
+         url('../fonts/Trebuchet_MS.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura_Bold';
+    src: url('../fonts/Futura_Bold.woff') format('woff'),
+         url('../fonts/Futura_Bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura_Book';
+    src: url('../fonts/Futura_Book.woff') format('woff'),
+         url('../fonts/Futura_Book.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.woff') format('woff'),
+         url('../fonts/Calibri.ttf')  format('truetype');
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.orders {
+	padding: 75px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+.orders__title {
+	font-family: 'Trebuchet_MS';
+	font-weight: bold;
+	font-size: 30px;
+
+	color: #41525c;
+
+	text-transform: uppercase;
+}
+
+.cards {
+	display: flex;
+	justify-content: center;
+
+	margin: 60px 0 0;
+}
+
+.card {
+	max-width: 290px;
+	width: 100%;
+
+	border: 1px solid #e8eaec;
+	border-radius: 5px;
+	
+}
+
+.card:nth-child(1) {
+	border-bottom-right-radius: 0;
+}
+
+.card:nth-child(2) {
+	margin: -15px 0;
+	border: 5px solid #ee8129;
+	box-shadow: 0px 0px 12.87px 0.13px #000;
+	z-index: 99;
+}
+
+.card:nth-child(3) {
+	border-bottom-left-radius: 0;
+}
+
+.card__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 69px;
+
+	background-color: #2bc2d5;
+	border-top-left-radius: 5px;
+}
+
+.card:nth-child(2) .card__header {
+	min-height: 80px;
+	background-color: #ee8129;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.card:nth-child(2) .card__button {
+	background-color: #ee8129;
+	box-shadow: 0px 3px 0px 0px #b3560b;
+}
+
+.card:nth-child(3) .card__header {
+	background-color: #00b89a;
+	border-top-left-radius: 0;
+	border-top-right-radius: 5px;
+}
+
+.card__offer {
+	font-family: 'Futura_Bold';
+	font-size: 24px;
+
+	text-transform: uppercase;
+
+	color: #fff;
+}
+
+.card__content {
+	padding: 20px 17px;
+}
+
+.card__title {
+	font-family: 'Futura_Book';
+	font-size: 24px;
+	color: #3f4042;
+	text-transform: uppercase;
+}
+
+.card__price {
+	padding: 22px 0 0;
+	font-family: 'Futura_Bold';
+	font-size: 72px;
+	color: #35495a;
+}
+
+.card__price sup {
+	position: relative;
+	top: -40px;
+	font-size: 18px;
+}
+
+.card__price sub {
+	font-family: 'Futura_Book';
+	font-size: 18px;
+}
+
+.card__features {
+	padding: 21px 0 0;
+	text-align: left;
+}
+
+.card__feature {
+	display: flex;
+	align-items: center;
+
+	min-height: 33px;
+
+	background-color: #edf5fd;
+	
+	font-family: 'Calibri';
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+
+	color: #888c94;
+	border-top: 1px #fff solid;
+}
+
+.card__feature:nth-child(2n) {
+	background-color: #f5f5f6;
+}
+
+.card__feature img {
+	padding:  0 15px 0 33px;
+}
+
+.card__button {
+	font-family: 'Calibri';
+	display: block;
+	width: 100%;
+
+	margin: 18px 0 0;
+	padding: 11px 0;
+
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: #fff;
+	background-color: #3070a8;
+
+	border-radius: 5px;
+	box-shadow: 0px 3px 0px 0px #13426b;
+}
+
+.card__button:active {
+	transform: translateY(3px);
+	box-shadow: none !important;
+}
+
